@@ -113,16 +113,16 @@ class douYuTVDanmu(object):
         self.log("监听中")
         while True:
             data = self.sock.recv(1024)
-            self.log(repr(data))
-            # a = re.search(b'type@=(\w*)', data)
-            # if a:
-            #     if a.group(1)==b'chatmsg':
-            #         danmu = re.search(b'nn@=(.*)/txt@=(.*?)/',data)
-            #         #self.log(danmu.group(1).decode()+'\t:\t'+danmu.group(2).decode())
-            #         try:
-            #             self.log(danmu.group(2).decode())
-            #         except BaseException as e:
-            #             self.log("\t\t_________解析弹幕信息失败:"+str(data))
+            #self.log(repr(data))
+            a = re.search(b'type@=(\w*)', data)
+            if a:
+                if a.group(1)==b'chatmsg':
+                    danmu = re.search(b'nn@=(.*)/txt@=(.*?)/',data)
+                    #self.log(danmu.group(1).decode()+'\t:\t'+danmu.group(2).decode())
+                    try:
+                        self.log(danmu.group(2).decode())
+                    except BaseException as e:
+                        self.log("\t\t_________解析弹幕信息失败:"+str(data))
 
 
 if __name__ == '__main__':
