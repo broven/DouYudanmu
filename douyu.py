@@ -126,7 +126,7 @@ class douYuTVDanmu(object):
 
 
 if __name__ == '__main__':
-    url = 'http://www.douyu.com/16789'
+    url = 'http://www.douyu.com/301712'
     danmu = douYuTVDanmu()
     danmu.getInfo(url)
     danmu.connectToDanMuServer()
