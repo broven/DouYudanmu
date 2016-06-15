@@ -7,5 +7,7 @@ python
 -   连接数据库
 -   代码格式化
 -   结合录像功能
-##use:
-直接 python file
+
+##usage
+python douyu.py
+通过修改url变量修改直播间
