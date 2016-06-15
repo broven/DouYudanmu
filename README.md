@@ -7,3 +7,5 @@ python
 -   连接数据库
 -   代码格式化
 -   结合录像功能
+##use:
+直接 python file
