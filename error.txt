@@ -1,3 +1,0 @@
- File "/Users/broven/Documents/python/danmu/douyu.py", line 122, in danmuWhile
-    self.log(danmu.group(2).decode())
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0xed in position 18: invalid continuation byte
